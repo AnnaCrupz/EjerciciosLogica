@@ -1,0 +1,18 @@
+html, body{
+   margin: 0;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    
+}
+.resultados{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+     width: 500px;
+      height: 500px; 
+      border-radius: 5px; 
+      opacity: .75;
+}

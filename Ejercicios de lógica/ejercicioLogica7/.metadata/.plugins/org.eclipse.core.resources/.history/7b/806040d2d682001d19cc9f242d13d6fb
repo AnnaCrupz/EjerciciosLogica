@@ -1,0 +1,22 @@
+package ejercicioLogica7;
+
+public class ejercicioLogica7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String dias = null;
+		int horas;
+		int minutos;
+		int total=0;
+		int minutosxhora=60*24;
+		switch (dias) {
+		case "Lunes": {
+			total=4*minutosxhora+(minutosxhora-(11*60));
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + dias);
+		}
+
+	}
+
+}

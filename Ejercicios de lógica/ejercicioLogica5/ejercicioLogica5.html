@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+<script>
+
+
+	var numSec = Math.round(Math.random()*100);
+	var intentos = true;
+	var numeros=[];
+
+	
+
+	while (true) {
+
+		var numEsc = parseInt(prompt("Ingrese un número entre 0-100"));
+		if(typeof numEsc==='number' && !isNaN(numEsc)){
+
+			if (numSec == numEsc){
+
+			alert("Felicidades, adivinaste el numero secreto");
+			console.log("Lista de numeros antes de acertar: ");
+			for (let index = 0; index < numeros.length; index++) {
+				console.log(numeros[index]);
+				
+			}
+			break;
+
+		}
+
+		else {
+
+			alert("Ups, el número secreto es incorrecto");
+			numeros.push(numEsc)
+		}
+
+	}	else{
+		alert("Por favor, ingresa un numero");
+	}
+
+}
+
+
+
+</script>
+
+
